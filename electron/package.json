@@ -1,5 +1,8 @@
 {
   "name": "kinspire-portal",
   "version": "0.1.0",
-  "main": "main.js"
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
 }
