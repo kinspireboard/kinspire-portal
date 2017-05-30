@@ -78,59 +78,6 @@ a, a:focus, a:visited {
   /*width: 100%;*/
 }
 
-/* Menu */
-
-.portal-menu {
-  position: absolute;
-  top: 0;
-  left: 150;
-  text-align: center;
-  z-index: 9; /* TODO constant for this? */
-}
-
-#menu-content {
-  display: none;
-}
-
-.portal-menu-title {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.portal-menu-content {
-  background-color: white;
-  border: 3px outset white;
-  width: 250px;
-}
-
-.portal-menu-item {
-  height: 50px;
-  font-size: 13.5pt;
-  margin: 5px 15px;
-  border-bottom: 5px solid gray;
-  text-transform: uppercase;
-  font-family: menuFont;
-}
-
-.portal-menu-item-resources a {
-  color: #b760e6;
-}
-
-.portal-menu-item-activities a{
-  color: #5271ff;
-}
-
-.portal-menu-item-access a {
-  color: #ff5c5c;
-}
-
-.portal-menu-item-profile a {
-  color: #ffbd4a;
-}
-
-.portal-menu-item-home a {
-  color: #35b729;
-}
 /* Back button */
 
 .portal-back {
@@ -141,7 +88,11 @@ a, a:focus, a:visited {
   font-size: 24px;
 }
 
-/* Login */
+.portal-back-arrow {
+  height: 60px;
+}
+
+/* Home */
 
 /*.home-section {
   border: 1px solid black;
@@ -156,6 +107,14 @@ a, a:focus, a:visited {
 .home-section-content {
   font-size: 16pt;
   color: #99e265;
+}
+
+.home-section-progress {
+  margin: 0 50px;
+}
+
+.home-section-progress-image {
+  width: 100%;
 }
 
 /* Volunteer access */
@@ -194,10 +153,7 @@ a, a:focus, a:visited {
   text-transform: uppercase;
   padding: 20px;
 }
-li {
-  color: green ;
-  fornt-size = 36px;
-}
-li span {
-  color: green
-}
+
+@import "resources.less";
+@import "stories.less";
+@import "menu.less";
